@@ -1,5 +1,5 @@
 """
-URL configuration for mysite project.
+URL configuration for config project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include,path
+from django.urls import include, path
 
 urlpatterns = [
     path('polls/', include('polls.urls')),
@@ -25,7 +25,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-# 127.0.0.1/polls/
-# 127.0.0.1/polls_a/
-# 127.0.0.1/polls_b/
-# 127.0.0.1/polls_c/
+# localhost:8000/polls
+# localhost:8000/polls_a
+# localhost:8000/polls_b
+# localhost:8000/polls_c
+
